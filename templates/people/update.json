@@ -1,0 +1,41 @@
+{
+  "Main": {
+    "SendRequest": {
+      "Rollback": false,
+      "UserId": -1,
+      "MessageFlags": 0,
+      "BinaryReport": true,
+      "Schema": "",
+      "MessageItems": [
+        {
+          "Operation": "SendBuffer",
+          "Number": 0,
+          "BufferName": "people",
+          "BufferData": []
+        },
+        {
+          "Operation": "Find",
+          "BufferName": "people",
+          "FindDirection": "Equal",
+          "Index": "IX_people_IDno"
+        },
+        {
+          "Operation": "SendBuffer",
+          "Number": 0,
+          "BufferName": "people",
+          "BufferData": []
+        },
+        {
+          "Operation": "Update",
+          "Triggers": "Triggers",
+          "BufferName": "people"
+        },
+        {
+          "Operation": "GetBuffer",
+          "Number": 0,
+          "BufferName": "people"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "Main": {
+    "SendRequest": {
+      "Rollback": false,
+      "UserId": -1,
+      "MessageFlags": 0,
+      "BinaryReport": true,
+      "Schema": "",
+      "MessageItems": [
+        {
+          "Operation": "SendBuffer",
+          "Number": 0,
+          "BufferName": "ibnkuser",
+          "BufferData": []
+        },
+        {
+          "Operation": "Find",
+          "BufferName": "ibnkuser",
+          "FindDirection": "Equal",
+          "Index": "IX_ibnkuser_username"
+        },
+        {
+          "Operation": "Delete",
+          "Triggers": "Triggers",
+          "BufferName": "ibnkuser"
+        }
+      ]
+    }
+  }
+}

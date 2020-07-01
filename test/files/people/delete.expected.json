@@ -1,0 +1,35 @@
+{
+  "Main": {
+    "SendRequest": {
+      "Rollback": false,
+      "UserId": -1,
+      "MessageFlags": 0,
+      "BinaryReport": true,
+      "Schema": "",
+      "MessageItems": [
+        {
+          "Operation": "SendBuffer",
+          "Number": 0,
+          "BufferName": "people",
+          "BufferData": [
+            {
+              "FieldName": "IDno",
+              "FieldValue": "123"
+            }
+          ]
+        },
+        {
+          "Operation": "Find",
+          "BufferName": "people",
+          "FindDirection": "Equal",
+          "Index": "IX_people_IDno"
+        },
+        {
+          "Operation": "Delete",
+          "Triggers": "Triggers",
+          "BufferName": "people"
+        }
+      ]
+    }
+  }
+}

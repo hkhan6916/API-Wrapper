@@ -1,0 +1,42 @@
+{
+  "Main": {
+    "SendRequest": {
+      "Rollback": false,
+      "UserId": -1,
+      "MessageFlags": 0,
+      "BinaryReport": true,
+      "Schema": "",
+      "MessageItems": [
+        {
+          "Operation": "SendBuffer",
+          "Number": 0,
+          "BufferName": "people",
+          "BufferData": [
+            {
+              "FieldName": "name",
+              "FieldValue": "hello"
+            },
+            {
+              "FieldName": "surname",
+              "FieldValue": "bye"
+            },
+            {
+              "FieldName": "title",
+              "FieldValue": "mr"
+            }
+          ]
+        },
+        {
+          "Operation": "Insert",
+          "BufferName": "people",
+          "Triggers": "Triggers"
+        },
+        {
+          "Operation": "GetBuffer",
+          "Number": 0,
+          "BufferName": "people"
+        }
+      ]
+    }
+  }
+}

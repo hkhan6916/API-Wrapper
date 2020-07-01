@@ -1,0 +1,50 @@
+{
+  "Main": {
+    "SendRequest": {
+      "Rollback": false,
+      "UserId": -1,
+      "MessageFlags": 0,
+      "BinaryReport": true,
+      "Schema": "",
+      "MessageItems": [
+        {
+          "Operation": "SendBuffer",
+          "Number": 0,
+          "BufferName": "ibnkuser",
+          "BufferData": [
+            {
+              "FieldName": "FK_rowid_people",
+              "FieldValue": "123456789123456789"
+            },
+            {
+              "FieldName": "username",
+              "FieldValue": "username1"
+            },
+            {
+              "FieldName": "name",
+              "FieldValue": "name"
+            },
+            {
+              "FieldName": "surname",
+              "FieldValue": "surname"
+            },
+            {
+              "FieldName": "title",
+              "FieldValue": "mr"
+            }
+          ]
+        },
+        {
+          "Operation": "Insert",
+          "BufferName": "ibnkuser",
+          "Triggers": "Triggers"
+        },
+        {
+          "Operation": "GetBuffer",
+          "Number": 0,
+          "BufferName": "ibnkuser"
+        }
+      ]
+    }
+  }
+}
